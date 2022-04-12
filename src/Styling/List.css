@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.List {
+  margin-top: 40px;
+}
+
+.list-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.list-item-dark,
+.list-item-light {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 50px;
+}
+
+.list-item-light {
+  border-bottom: 1px solid grey;
+}
+
+.list-item-dark {
+  border-bottom: 1px solid yellow;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.name-img {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 175px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.coin-info {
+  display: flex;
+  text-align: right;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+  width: 575px;
+}
+
+.percent-green {
+  color: green;
+}
+
+.percent-red {
+  color: red;
+}
+
+.item-content img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.coin-symbol {
+  width: 100px;
+  text-align: center;
+}
+
+.coin-price {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.coin-1h,
+.coin-24h,
+.coin-7d,
+.coin-30d,
+.coin-1y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  text-align: left;
+}
+
+.coin-info .top {
+  margin: 10px;
+  font-size: 5px;
+}
+
+.input-dark {
+  padding: 10px;
+  outline: none;
+}
+
+.input-light {
+  padding: 10px;
+  outline: none;
+  color: white;
+}
+
+.input-light::placeholder {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .list-item-dark,
+  .list-item-light {
+    width: 700px;
+    font-size: small;
+    
+  }
+
+  .coin-7d {
+    display: none;
+  }
+
+  .coin-info {
+    justify-content: center;
+    width: 450px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .list-item-dark,
+  .list-item-light {
+    width: 500px;
+    font-size: small;
+    height: 65px;
+  }
+
+  .coin-7d,
+  .coin-1y {
+    display: none;
+  }
+
+  .coin-info {
+    justify-content: center;
+    width: 300px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .name-img {
+    width: 150px;
+    margin: 0px;
+  }
+}
